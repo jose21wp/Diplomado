@@ -1,0 +1,29 @@
+body {
+  background-color: floralwhite;
+  color: brown;
+  text-align: center;
+}
+header {
+  background-color: aquamarine;
+  color: blueviolet;
+  padding: 1rem;
+}
+main {
+  padding: 2rem;
+}
+button {
+  background-color: aquamarine;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: alias;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
