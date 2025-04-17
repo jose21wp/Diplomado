@@ -2,7 +2,7 @@
   PALETA DE COLORES
   https://coolors.co/palettes/trending
  */
-
+/* ESTILO BASE */
 * {
   margin: 0;
   padding: 0;
@@ -52,10 +52,11 @@ body {
   /* 50 px MARGENES SUPERIRO E INFERIRO Y AUTO LOS MARGENES LATERALES */
   margin: 50px auto;
 }
-
+/* ANCHO DE CONTENEDOR IZQUIERDO */
+/* COLOR DE FONDO DEL CONTENEDOR IZQUIERDO */
 .contenedor .contendor_izq {
-  width: 280px; /* ANCHO DE CONTENEDOR IZQUIERDO */
-  background: #001f54; /* COLOR DE FONDO DEL CONTENEDOR IZQUIERDO */
+  width: 280px;
+  background: #001f54;
 }
 
 /* DA TAMAÑO A IMAGEN PARA QUW OCUPE EL 100% DE LOS MARGENES EN DONDE ESTA UBICADO */
@@ -86,13 +87,13 @@ body {
 .pointer {
   cursor: pointer;
 }
-
+/* POCIONA ELEMENTOS DE LA LISTA EN EL CENTRO PARA ICONO */
 .contenedor .contendor_izq ul li {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
 }
-
+/* CREA CIRCULO DE COLOR  #fefcfb */
 .contenedor .contendor_izq ul li .icon {
   width: 35px;
   height: 35px;
@@ -103,11 +104,11 @@ body {
   font-size: 16px;
   position: relative;
 }
-
+/* DA COLOR A TEXTO  */
 .contenedor .contendor_izq ul li .text-data {
   color: #fefcfb;
 }
-
+/* DA POCIONAMIENTO FLEXIBLE A SKILL */
 .contenedor .contendor_izq .resumen_skills ul li {
   display: flex;
   margin-bottom: 10px;
@@ -120,7 +121,7 @@ body {
 .contenedor .contendor_izq .resumen_skills ul li .skill_nombre {
   width: 35%;
 }
-
+/* POCICIONA CUADRO DE SKILLS */
 .contenedor .contendor_izq .resumen_skills ul li .skill_progress {
   width: 60%;
   margin: 0 5px;
@@ -128,6 +129,7 @@ body {
   background: #034078;
   position: relative;
 }
+
 /* DEFINE UN ANCHO AL PORSENTAJE DEL SKILL PARA QUE LAS BARRA NO SE VEAN DESALINEADAS */
 .contenedor .contendor_izq .resumen_skills ul li .skill_por {
   width: 15%;
@@ -141,7 +143,7 @@ body {
   height: 100%;
   background: #fefcfb;
 }
-
+/* DA ESTILO AL CONTENEDOR DERECHO  */
 .contenedor .contenedor_der {
   width: 520px;
   background: #fefcfb;
@@ -151,17 +153,18 @@ body {
 .contenedor .contenedor_der .titulos {
   color: #1282a2;
 }
-
+/* DA PADDIN IZQUIEDO AL CONTENIDO QUE TIENE LA LINEA VERTICAL */
 .contenedor .contenedor_der .resumen_trabajo ul,
 .contenedor .contenedor_der .resumen_educacion ul {
   padding-left: 40px;
-  overflow: hidden;
 }
 
+/* DA POSICION RELATIVA A LISTA VERTICAL */
 .contenedor .contenedor_der ul li {
   position: relative;
 }
 
+/* DA ESTILO A LOS AÑOS EN LA LISTA VERTICAL */
 .contenedor .contenedor_der ul li .date {
   font-size: 16px;
   font-weight: 500;
@@ -178,7 +181,7 @@ body {
   margin-bottom: 0;
 }
 
-/* DA ESTILO Al CIRCULO DE LA LISTA HISTORIAL DE TRABAJO Y EDUCACION */
+/* DA ESTILO Al CIRCULO PEQUEÑO DE LA LISTA HISTORIAL DE TRABAJO Y EDUCACION */
 .contenedor .contenedor_der .resumen_trabajo ul li:before,
 .contenedor .contenedor_der .resumen_educacion ul li:before {
   content: "";
@@ -190,8 +193,8 @@ body {
   border-radius: 50%;
   border: 2px solid #1282a2;
 }
-/* DA ESTILO A LA BARRA VERTICAL DE HISTORIAL DE TRABAJO Y EDUCACION */
 
+/* DA ESTILO A LA LINEA VERTICAL DE HISTORIAL DE TRABAJO Y EDUCACION */
 .contenedor .contenedor_der .resumen_trabajo ul li:after,
 .contenedor .contenedor_der .resumen_educacion ul li:after {
   content: "";
@@ -202,13 +205,14 @@ body {
   height: 109%;
   background: #1282a2;
 }
-/* SE APLICA UN DISPLAY FLEX Y SPACE-BETWEEN PARA QUE SE DISTRIBUYAN LOS ICONOS DE MANERA EQUITATIVA */
+
+/* SE APLICA UN DISPLAY FLEX Y SPACE-BETWEEN PARA QUE SE DISTRIBUYAN CIRCULOS DE MANERA EQUITATIVA */
 .contenedor .contenedor_der .resumen_hobby ul {
   display: flex;
   justify-content: space-between;
 }
 
-/* SE AGREGA ESTILO A HOBBIES */
+/* GENERA UN CUADRO Y CON EL BORDER RADIUS LOS DEJA COMO CIRCULO */
 .contenedor .contenedor_der .resumen_hobby ul li {
   width: 80px;
   height: 80px;
@@ -223,6 +227,7 @@ body {
   font-size: 30px;
 }
 
+/* GENERA LINEA PARA UNIR CICULOS */
 .contenedor .contenedor_der .resumen_hobby ul li:before {
   content: "";
   position: absolute;
@@ -232,12 +237,13 @@ body {
   height: 2px;
   background: #1282a2;
 }
-/* SE ELIMINA LIENA CREADA EN ULTIMO ELEMENTO DE LA LISTA*/
+
+/* SE ELIMINA LINEA CREADA EN ULTIMO ELEMENTO DE LA LISTA*/
 .contenedor .contenedor_der .resumen_hobby ul li:last-child:before {
   display: none;
 }
 
-/* SE POSICIONAN ICONOS DENTRO */
+/* POSICIONA ICONOS DENTRO del CIRCULO*/
 .contenedor .icon i,
 .contenedor .contenedor_der .resumen_hobby ul li i {
   position: absolute;
