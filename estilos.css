@@ -1,29 +1,247 @@
+/* 
+  PALETA DE COLORES
+  https://coolors.co/palettes/trending
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ELIMINA LOS PUNTOS PREDETERMINADOS DE LAS LISTAS */
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+/* BACKGROUND DE PAGINA, EL COLOR POR SI NO ENCUENTRA LA IMAGEN */
 body {
-  background-color: floralwhite;
-  color: brown;
-  text-align: center;
+  background-image: url("shared/img/backgrounnd.jpg");
+  /* TAMAÑO DE LETRA */
+  font-size: 14px;
+  /* SALTO ENTRE LINEAS */
+  line-height: 22px;
+  background-color: #555555;
 }
-header {
-  background-color: aquamarine;
-  color: blueviolet;
+/* DA ESTILO A LA FOTO DE CURRICULUM Y DEJA EN ESCALA DE GRIS*/
+.img-perfil {
+  border-radius: 50px;
   padding: 1rem;
+  filter: grayscale(85%);
 }
-main {
-  padding: 2rem;
-}
-button {
-  background-color: aquamarine;
-  color: aliceblue;
-  border: none;
-  border-radius: 5px;
-  cursor: alias;
-  padding: 10px;
+/* ESTILO DE TAMAÑO DE TITULOS PRICIPALES */
+.titulos {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-footer {
-  background-color: black;
-  color: aliceblue;
-  bottom: 0;
-  position: fixed;
+/* DA COLOR A LOS TITULOS  DE CONTENEDOR IZQUIEDO*/
+.contenedor .contendor_izq .titulos {
+  color: #fefcfb;
+}
+
+/* DA TAMAÑO A SUBTITULO */
+.sub-titulos {
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*  ESTILO DE CONTENEDOR PRINCIPAL CON FLEX PARA MANIPULAR DOS CONTENEDORES DENTRO*/
+.contenedor {
+  width: 800px;
+  height: auto;
+  display: flex;
+  /* 50 px MARGENES SUPERIRO E INFERIRO Y AUTO LOS MARGENES LATERALES */
+  margin: 50px auto;
+}
+
+.contenedor .contendor_izq {
+  width: 280px; /* ANCHO DE CONTENEDOR IZQUIERDO */
+  background: #001f54; /* COLOR DE FONDO DEL CONTENEDOR IZQUIERDO */
+}
+
+/* DA TAMAÑO A IMAGEN PARA QUW OCUPE EL 100% DE LOS MARGENES EN DONDE ESTA UBICADO */
+.contenedor .contendor_izq .resumen_perfil img {
   width: 100%;
+  height: 100%;
+}
+/* LE DA PADDING AL CONTENEDOR IZQUIERDO PARA QUE LOS ELEMENTOS NO SE VEAN PEGADOS AL BORDE */
+.contenedor .contendor_izq .contendor_izq_padd {
+  padding: 0 25px;
+}
+/* DA MARGEN POR DEBAJO A LOS TITULOS */
+.contenedor .margin_botton_title {
+  margin-bottom: 20px;
+}
+/* COLOR A TITULO PROFECIONAL */
+.contenedor .contendor_izq .titulo_prof {
+  color: #fefcfb;
+}
+
+/* LINEA SEPARADORA DE ITEMS */
+.contenedor .resumen_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #fefcfb;
+}
+
+/* CAMBIA EL ICONO DEL MOUSE A UNA MANITO */
+.pointer {
+  cursor: pointer;
+}
+
+.contenedor .contendor_izq ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.contenedor .contendor_izq ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fefcfb;
+  color: #034078;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.contenedor .contendor_izq ul li .text-data {
+  color: #fefcfb;
+}
+
+.contenedor .contendor_izq .resumen_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #fefcfb;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DEFINE UN ANCHO AL NOMBRE DEL SKILL PARA QUE LAS BARRA NO SE VEAN DESALINEADAS */
+.contenedor .contendor_izq .resumen_skills ul li .skill_nombre {
+  width: 35%;
+}
+
+.contenedor .contendor_izq .resumen_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #034078;
+  position: relative;
+}
+/* DEFINE UN ANCHO AL PORSENTAJE DEL SKILL PARA QUE LAS BARRA NO SE VEAN DESALINEADAS */
+.contenedor .contendor_izq .resumen_skills ul li .skill_por {
+  width: 15%;
+}
+
+/* DEFINE ESTILO DE BARRAS DE PROGRESO DE SKILL */
+.contenedor .contendor_izq .resumen_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fefcfb;
+}
+
+.contenedor .contenedor_der {
+  width: 520px;
+  background: #fefcfb;
+  padding: 25px;
+}
+/* DA COLOR A LOS TITULOS  DE CONTENEDOR DERECHO */
+.contenedor .contenedor_der .titulos {
+  color: #1282a2;
+}
+
+.contenedor .contenedor_der .resumen_trabajo ul,
+.contenedor .contenedor_der .resumen_educacion ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.contenedor .contenedor_der ul li {
+  position: relative;
+}
+
+.contenedor .contenedor_der ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* DA MARGEN ENTRE EXPERIENCIAS EN LA LISTA */
+.contenedor .contenedor_der ul li .info {
+  margin-bottom: 20px;
+}
+
+/* ELIMINA EL MARGEN QUE ESTA ABAJO EN EL ULTIMO ELEMENTO DE LA LISTA */
+.contenedor .contenedor_der ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+/* DA ESTILO Al CIRCULO DE LA LISTA HISTORIAL DE TRABAJO Y EDUCACION */
+.contenedor .contenedor_der .resumen_trabajo ul li:before,
+.contenedor .contenedor_der .resumen_educacion ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #1282a2;
+}
+/* DA ESTILO A LA BARRA VERTICAL DE HISTORIAL DE TRABAJO Y EDUCACION */
+
+.contenedor .contenedor_der .resumen_trabajo ul li:after,
+.contenedor .contenedor_der .resumen_educacion ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 109%;
+  background: #1282a2;
+}
+/* SE APLICA UN DISPLAY FLEX Y SPACE-BETWEEN PARA QUE SE DISTRIBUYAN LOS ICONOS DE MANERA EQUITATIVA */
+.contenedor .contenedor_der .resumen_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SE AGREGA ESTILO A HOBBIES */
+.contenedor .contenedor_der .resumen_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #1282a2;
+  border-radius: 50%;
+  position: relative;
+  color: #1282a2;
+}
+
+/* SE DA TAMAÑO A LOS ICONOS DE LOS HOBBIES*/
+.contenedor .contenedor_der .resumen_hobby ul li i {
+  font-size: 30px;
+}
+
+.contenedor .contenedor_der .resumen_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #1282a2;
+}
+/* SE ELIMINA LIENA CREADA EN ULTIMO ELEMENTO DE LA LISTA*/
+.contenedor .contenedor_der .resumen_hobby ul li:last-child:before {
+  display: none;
+}
+
+/* SE POSICIONAN ICONOS DENTRO */
+.contenedor .icon i,
+.contenedor .contenedor_der .resumen_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

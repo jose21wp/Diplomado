@@ -1,19 +1,14 @@
+//DETECTA EVENTOS
 document.addEventListener("DOMContentLoaded", function () {
-  const boton = document.getElementById("id-cambiar-texto");
-  const mensaje = document.getElementById("id-mensaje");
-
-  boton.addEventListener("click", function () {
-    mensaje.textContent = "SE CAMBIO 👍";
-    document.body.style.backgroundColor = "aquamarine";
-    console.assert('ALERT')
-    const respuesta = prompt("Como te llamas?");
-    if (respuesta) {
-      alert("Hola " + respuesta + ", bienvenido.");
-    }
-    for (let index = 1; index < 10; index++) {
-        console.log(index*5);
-        
-        
-    }
+  //GET UL QUE TIENE EL ICONO DEL LINKEDIN
+  const linkLinkedin = document.getElementById("linkedin-link");
+  //SE DECLARA VARIABLE DE URL DE MI PERFIL DE LINKEDIN
+  const baseUrl =
+    "https://www.linkedin.com/in/jos%C3%A9-espinoza-miranda-3265b91a0/";
+  //DETECTA CLICK EN ELEMENTO Y LO REDIRECCIONA A MI PERFIL
+  linkLinkedin.addEventListener("click", function () {
+    window.location = baseUrl;
   });
+
+
 });

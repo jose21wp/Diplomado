@@ -1,24 +1,229 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera página web</title>
+    <title>Curriculum</title>
+    <!-- Hola de estilos -->
     <link rel="stylesheet" href="./estilos.css" />
+    <!-- Iconos importados desde fontawesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1>¡Hola Mundo!</h1>
-    </header>
-    <main>
-      <p id="id-mensaje">Bienvenido a tu primer sitio web con html,css y javascript</p>
-      <button id="id-cambiar-texto" >Haz click para cambiar texto</button>
-    
-    </main>
-    <footer>
-      <p>Hecho con 😍 en tu primer dia de clases.</p>
-    </footer>
-    <script src="./index.js"></script>
+    <div class="contenedor">
+      <div class="contendor_izq">
+        <div class="resumen_perfil">
+          <img
+            class="img-perfil"
+            src="./shared/img/perfil.jpg"
+            alt="foto_perfil"
+          />
+        </div>
+        <div class="contendor_izq_padd">
+          <div class="resumen_item resumen_info">
+            <div class="margin_botton_title">
+              <p class="titulos">José Espinoza Miranda</p>
+              <p class="titulo_prof">Ingeniero en Infomática</p>
+            </div>
+            <ul>
+              <li>
+                <div class="icon">
+                  <i class="fas fa-route"></i>
+                </div>
+                <div class="text-data">
+                  Golfo de Penas 2159. <br />
+                  San Bernardo. <br />
+                  Región Metropolitana.
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="text-data">+569 5533 2573</div>
+              </li>
+              <li>
+                <div class="icon">
+                  <i class="fas fa-at"></i>
+                </div>
+                <div class="text-data">jose21wp@gmail.com</div>
+              </li>
+              <li class="pointer" id="linkedin-link">
+                <div class="icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="text-data">@Jose-Espinoza</div>
+              </li>
+            </ul>
+          </div>
+          <div class="resumen_item resumen_skills">
+            <div class="margin_botton_title">
+              <p class="titulos">skill's</p>
+            </div>
+            <ul>
+              <li>
+                <div class="skill_nombre">HTML</div>
+                <div class="skill_progress">
+                  <span style="width: 50%"></span>
+                </div>
+                <div class="skill_por">50%</div>
+              </li>
+              <li>
+                <div class="skill_nombre">CSS</div>
+                <div class="skill_progress">
+                  <span style="width: 45%"></span>
+                </div>
+                <div class="skill_por">45%</div>
+              </li>
+              <li>
+                <div class="skill_nombre">ANGULAR</div>
+                <div class="skill_progress">
+                  <span style="width: 80%"></span>
+                </div>
+                <div class="skill_por">80%</div>
+              </li>
+              <li>
+                <div class="skill_nombre">JS</div>
+                <div class="skill_progress">
+                  <span style="width: 65%"></span>
+                </div>
+                <div class="skill_por">65%</div>
+              </li>
+              <li>
+                <div class="skill_nombre">JAVA</div>
+                <div class="skill_progress">
+                  <span style="width: 55%"></span>
+                </div>
+                <div class="skill_por">55%</div>
+              </li>
+              <li>
+                <div class="skill_nombre">SQL</div>
+                <div class="skill_progress">
+                  <span style="width: 50%"></span>
+                </div>
+                <div class="skill_por">50%</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor_der">
+        <div class="resumen_item">
+          <div class="margin_botton_title">
+            <p class="titulos">Sobre mi</p>
+          </div>
+          <p>
+            Ingeniero en informática autodidacta con sólidos conocimientos en
+            desarrollo front-end y back-end, especializado en tecnologías como
+            Angular, Java y bases de datos SQL. Apasionado por la creación de
+            soluciones eficientes y escalables, con experiencia en proyectos
+            innovadores. Enfocado la programacion de código limpio, mantenible y
+            optimizado, siguiendo buenas prácticas de desarrollo y arquitectura
+            de software.
+          </p>
+        </div>
+        <div class="resumen_item resumen_trabajo">
+          <div class="margin_botton_title">
+            <p class="titulos">Detalle Experiencia</p>
+          </div>
+          <ul>
+            <li>
+              <div class="date">2019 - 2020</div>
+              <div class="info">
+                <p class="sub-titulos">Agente Call-Center Entel</p>
+                <p>
+                  "Se desempeñó en la mesa de ayuda de Entel, brindando soporte
+                  técnico a ACHS. Su labor incluía la orientación a los
+                  funcionarios en el uso y manipulación de equipos
+                  computacionales, además de la resolución de incidencias de
+                  manera remota cuando era necesario, asegurando un servicio
+                  eficiente y continuo.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="date">2020 - 2021</div>
+              <div class="info">
+                <p class="sub-titulos">Desarrollador IBM</p>
+                <p>
+                  Participó en un proyecto con el cliente Banco Estado,
+                  especializándose en el desarrollo de componentes en Angular
+                  para el portal de ejecutivos del banco. Su trabajo se basó en
+                  la implementación de soluciones adaptadas a los requerimientos
+                  específicos del cliente, garantizando eficiencia y alineación
+                  con sus necesidades operativas.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="date">2021 - Actual</div>
+              <div class="info">
+                <p class="sub-titulos">
+                  Desarrollador de sistemas institucionales de la Fuerza Aérea
+                  de Chile.
+                </p>
+                <p>
+                  Participa en proyectos vinculados al Comando de Personal,
+                  enfocándose en la automatización de procesos institucionales
+                  clave, como la postulación a viviendas fiscales, el retiro de
+                  suboficiales, la inscripción en cursos ofrecidos por la
+                  División de Educación y la gestión de usuarios de la FACH.
+                  Desarrolla y mejora el Portal del Comando de Personal,
+                  facilitando el acceso de los funcionarios a diversos procesos
+                  administrativos. Contribuye activamente en todas las etapas
+                  del desarrollo de proyectos, desde la recopilación de
+                  requisitos hasta la implementación en producción. Participa en
+                  la definición de casos de uso, la maquetación del proyecto y
+                  el desarrollo de funciones y procedimientos en bases de datos.
+                  Además, se encarga de la creación e integración de
+                  microservicios y su implementación en el front-end utilizando
+                  tecnologías como Angular, asegurando soluciones eficientes y
+                  escalables.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="resumen_item resumen_educacion">
+          <div class="margin_botton_title">
+            <p class="titulos">Educación</p>
+          </div>
+          <ul>
+            <li>
+              <div class="date">2013 - 2018</div>
+              <div class="info">
+                <p class="sub-titulos">Ingeniería en Informática</p>
+                <p>Instituto Profesional Duoc UC - Sede San Bernardo.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="resumen_item resumen_hobby">
+          <div class="margin_botton_title">
+            <p class="titulos">Hobby's</p>
+          </div>
+          <ul>
+            <li><i class="fas fa-dumbbell" title="Realizar deporte."></i></li>
+            <li>
+              <i
+                class="fas fa-gamepad"
+                title="Jugar videojuegos de acción."
+              ></i>
+            </li>
+            <li>
+              <i class="fas fa-music" title="Programar escuchando música."></i>
+            </li>
+            <li>
+              <i class="fas fa-baby" title="Pasar tiempo con mi familia."></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="index.js"></script>
 </html>
